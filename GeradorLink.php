@@ -161,28 +161,4 @@ class GeradorLink{
 		{ return strtolower(trim($this->tiraCaracterUnderline($this->removeAcentosUtf8($this->eliminaHtml(trim($link))))));}
 		
 }//fim Classe
-
-
-/*
-//Funcionamento para gerar_link.php
-###FUNCIONA ASSIM....
-//Testando a classe de geraçao de links
-$OB = new GeradorLink;
-$textinho11 = "?MARIA « TAL »/? &euro; &amp; &&& #! ``~()TAL VOCê é isso ai fautão é legalzinho É muito ísso ACHA \"\" '' LEGAL?? OlÁ mundo CABUlóSÀO SANSão &gt; &lt; &euro; é &acute; & &nbsp;  um &copy; = animalzÃOß ínigualável éssa úva óvo &quot; &amp;? SÀO São ` PÃO ";
-
-$textinho11utf = utf8_encode("?MARIA « TAL »/? &euro; &amp; &&& #! ``~()TAL VOCê é isso ai fautão é legalzinho É muito ísso ACHA \"\" '' LEGAL?? OlÁ mundo = SÀO São ` PÃO CABUlóSÀO SANSão &gt; &lt; &euro; é &acute; & &nbsp;  um &copy; animalzÃOß ínigualável éssa úva óvo &quot; &amp;?");
-
-
-//Em açao
-$textinho = $OB->gerarLinkTraco($textinho11);
-$textinho11 = $OB->gerarLinkUnderline($textinho11);
-$textinho2 = $OB->gerarLinkTracoUtf8($textinho11utf);
-$textinho22 = $OB->gerarLinkUnderlineUtf8($textinho11utf);
-
-
-echo $textinho;
-echo '<br><br>'.$textinho11;
-echo '<br><br>'.$textinho2;
-echo '<br><br>'.$textinho22;
-*/
 ?>
